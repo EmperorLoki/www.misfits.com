@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.landing-section {
+        text-align: left; /* Center the image horizontally */
+        padding: 20px;      /* Add padding around the image */
+    }
+    
+    .landing-image {
+        max-width: 100%; /* Make the image responsive */
+        height: auto;    /* Maintain aspect ratio */
+        border-radius: 10px; /* Optional: rounded corners */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Optional: add shadow for a pop effect */
+    }
+    
+header {
+    background: #2e1603e0;
+    color: #fbf5f5;
+    padding: 10px 15px 10px 15px;
+    text-align: 20px;
+    font-size: 8px;
+    margin-right: 5px;
+}
+
+
+.hero {
+    background: url(images/Aesthetic\ Fantasy\ Concept\ Art.jpg) no-repeat center center;
+    background-size: cover; 
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    image-rendering: crisp-edges;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-attachment: scroll; 
+        padding: 60px 15px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 40px 10px;
+    }
+}
+
+.features {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-around; /* Space out the features */
+    padding: 20px;
+    background: #ffffff;
+}
+.feature {
+    flex: 1; /* Allow features to grow */
+    min-width: 250px; /* Set a minimum width */
+    margin: 10px; /* Add margin for spacing */
+    padding: 10px;
+    background: #e2e2e2;
+    border-radius: 5px;
+    text-align: center;
+}
+.images {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: center; /* Center the images */
+    padding: 20px;
+}
+.image {
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height to ensure square shape */
+    margin: 10px; /* Add margin for spacing */
+    border-radius: 50%; /* Make the image circular */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+}
+
+.name {
+    display: flex; /* Enables flexbox layout */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Add media queries for different screen sizes */
+@media (max-width: 768px) {
+    .name {
+        flex-direction: row; /* Change to row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        flex-direction: column; /* Revert to column on smaller screens */
+        padding: 10px; /* Optional: add padding if needed */
+    }
+}
